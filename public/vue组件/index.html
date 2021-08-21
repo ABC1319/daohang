@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="viggo" />
+  <title>HBUACM - 河北大学程序设计训练营</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="导航网站 分享 学习工具">
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <link rel="stylesheet" href="/css/github.min.css">
+  <script src="/js/highlight.min.js"></script>
+  
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Arimo:400,700,400italic.css">
+<link rel="stylesheet" href="/css/fonts/linecons/css/linecons.min.css">
+<link rel="stylesheet" href="/css/fonts/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/xenon-core.min.css">
+<link rel="stylesheet" href="/css/xenon-components.min.css">
+<link rel="stylesheet" href="/css/xenon-skins.min.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/nav.min.css">
+<link rel="stylesheet" href="/css/md.css">
+
+  
+<script src="/js/jquery-1.11.1.min.js"></script>
+
+  
+<script src="/js/header.js"></script>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+        
+<script src="/js/html5shiv.min.js"></script>
+
+        
+<script src="/js/respond.min.js"></script>
+
+    <![endif]-->
+  <script>
+  hljs.configure({useBR: true});
+  hljs.initHighlightingOnLoad();
+  </script>
+  <!-- / FB Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://liu-meizhou.github.io/vue/index.html">
+  <meta property="og:title" content="HBUACM - 河北大学程序设计训练营">
+  <meta property="og:description" content="导航网站 分享 学习工具">
+  <meta property="og:site_name" content="HBUACM - 河北大学程序设计训练营">
+  
+  <meta property="og:image" content="/images/webstack_banner_cn.png">
+  
+  <!-- / Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HBUACM - 河北大学程序设计训练营">
+  <meta name="twitter:description" content="导航网站 分享 学习工具">
+  
+  <meta name="twitter:image" content="/images/webstack_banner_cn.png">
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div class="page-container">
+    <div class="sidebar-menu toggle-others fixed">
+  <div class="sidebar-menu-inner">
+    <header class="logo-env">
+      <div class="logo">
+        <a href="/index.html" class="logo-expanded">
+          <img src="/images/logo@2x.png" width="100%" alt="" />
+        </a>
+        <a href="/index.html" class="logo-collapsed">
+          <img src="/images/logo-collapsed@2x.png" width="40" alt="" />
+        </a>
+      </div>
+      <div class="mobile-menu-toggle visible-xs">
+        <a href="#" data-toggle="user-info-menu">
+          <i class="linecons-cog"></i>
+        </a>
+        <a href="#" data-toggle="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <ul id="main-menu" class="main-menu">
+      
+
+      
+        <li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 0em" title="通信方式"><i class="far fa-star"></i><span class="title">通信方式</span></a><ul><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 1em" title="父=&gt;子 props"><i class="far fa-star"></i><span class="title">父=&gt;子 props</span></a><ul><li><a href="#特性" class="smooth" style="padding-left: 2em" title="特性"><i class="far fa-star"></i><span class="title">特性</span></a></li><li><a href="#使用" class="smooth" style="padding-left: 2em" title="使用"><i class="far fa-star"></i><span class="title">使用</span></a></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 2em" title="意外使用"><i class="far fa-star"></i><span class="title">意外使用</span></a><ul><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 3em" title="传入非prop的属性"><i class="far fa-star"></i><span class="title">传入非prop的属性</span></a><ul><li><a href="#不希望继承" class="smooth" style="padding-left: 4em" title="不希望继承"><i class="far fa-star"></i><span class="title">不希望继承</span></a></li></ul></li><li><a href="#替换-合并已有属性" class="smooth" style="padding-left: 3em" title="替换/合并已有属性"><i class="far fa-star"></i><span class="title">替换/合并已有属性</span></a></li></ul></li></ul></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 1em" title="子=&gt;父 事件监听"><i class="far fa-star"></i><span class="title">子=&gt;父 事件监听</span></a><ul><li><a href="#v-on" class="smooth" style="padding-left: 2em" title="v-on/@"><i class="far fa-star"></i><span class="title">v-on/@</span></a></li><li><a href="#v-model" class="smooth" style="padding-left: 2em" title="v-model"><i class="far fa-star"></i><span class="title">v-model</span></a></li><li><a href="#sync" class="smooth" style="padding-left: 2em" title=".sync"><i class="far fa-star"></i><span class="title">.sync</span></a></li><li><a href="#注意事项" class="smooth" style="padding-left: 2em" title="注意事项"><i class="far fa-star"></i><span class="title">注意事项</span></a></li></ul></li></ul></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 0em" title="插槽"><i class="far fa-star"></i><span class="title">插槽</span></a><ul><li><a href="#使用-1" class="smooth" style="padding-left: 1em" title="使用"><i class="far fa-star"></i><span class="title">使用</span></a></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 1em" title="数据传递"><i class="far fa-star"></i><span class="title">数据传递</span></a><ul><li><a href="#插槽访问子组件数据" class="smooth" style="padding-left: 2em" title="插槽访问子组件数据"><i class="far fa-star"></i><span class="title">插槽访问子组件数据</span></a></li></ul></li><li><a href="#具有名字的插槽" class="smooth" style="padding-left: 1em" title="具有名字的插槽"><i class="far fa-star"></i><span class="title">具有名字的插槽</span></a></li><li><a href="#原理" class="smooth" style="padding-left: 1em" title="原理"><i class="far fa-star"></i><span class="title">原理</span></a></li></ul></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 0em" title="动态组件&amp;异步组件"><i class="far fa-star"></i><span class="title">动态组件&amp;异步组件</span></a><ul><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 1em" title="动态组件"><i class="far fa-star"></i><span class="title">动态组件</span></a><ul><li><a href="#组件缓存" class="smooth" style="padding-left: 2em" title="组件缓存"><i class="far fa-star"></i><span class="title">组件缓存</span></a></li></ul></li><li><a class="fas fa-angle-down" style="cursor: pointer; padding-left: 1em" title="异步组件"><i class="far fa-star"></i><span class="title">异步组件</span></a><ul><li><a href="#推荐" class="smooth" style="padding-left: 2em" title="推荐"><i class="far fa-star"></i><span class="title">推荐</span></a></li><li><a href="#处理加载状态" class="smooth" style="padding-left: 2em" title="处理加载状态"><i class="far fa-star"></i><span class="title">处理加载状态</span></a></li></ul></li></ul></li>
+      
+
+      
+      <li class="submit-tag">
+        <a href="/about/">
+          <i class="far fa-heart"></i>
+          <span class="tooltip-blue">关于本站</span>
+        </a>
+      </li>
+      
+      
+    </ul>
+  </div>
+  <div class="e-resize"></div>
+</div>
+
+    <div class="main-content">
+      <nav class="navbar user-info-navbar" role="navigation">
+        <ul class="user-info-menu left-links list-inline list-unstyled">
+          <li class="hidden-sm hidden-xs hover-line">
+            <a href="#" data-toggle="sidebar">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li class="dropdown hover-line language-switcher">
+            <a href="/index.html" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
+            </a>
+            <ul class="dropdown-menu languages">
+              <li class="active">
+                <a href="/index.html">
+                  <img src="/images/flags/flag-cn.png" alt="flag-cn" alt="flag-cn" /> Chinese
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="switch-mode hover-line" onclick="switchNightMode()">
+            <a href="#">
+              <svg t="1593061068148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1681" width="16" height="16">
+                <path d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z" p-id="1682" fill="#707070"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        
+        <a target="_blank" rel="noopener" href="https://github.com/liu-meizhou/liu-meizhou.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        
+      </nav>
+      
+<h1 id="通信方式"><a href="#通信方式" class="headerlink" title="通信方式"></a>通信方式</h1><h2 id="父-gt-子-props"><a href="#父-gt-子-props" class="headerlink" title="父=&gt;子 props"></a>父=&gt;子 props</h2><h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul>
+<li><p><strong>命名</strong></p>
+<p>由于HTML中属性大小写不敏感 - prop名字写成camelCase<code>驼峰命名法</code>等价于kebab-case<code>短横线分隔</code></p>
+</li>
+<li><p><strong>传参</strong></p>
+<p>传递不是字符串需要使用<code>v-bind</code>来告诉浏览器这是<code>javascript</code>表达式而不是字符串</p>
+<p>注：对象和数组等引用类型是传入引用的，子组件进行修改也会影响父组件的值</p>
+</li>
+<li><p><strong>单向数据流</strong></p>
+<p>所有的prop都使得父子prop之间形成<strong>单向下行绑定</strong><code>夫级的prop更新会向下流动到子组件中，反过来不行</code></p>
+<p>注：一般不在子组件中修改prop的值，应在父组件进行修改，流向子组件</p>
+</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>子组件定义props属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// type: Boolean</span><br><span class="hljs-comment">//       Number</span><br><span class="hljs-comment">//       String</span><br><span class="hljs-comment">//		 Symbol</span><br><br><span class="hljs-comment">//       Array</span><br><span class="hljs-comment">//       Object</span><br><span class="hljs-comment">//       Date</span><br><span class="hljs-comment">//       Function</span><br><span class="hljs-comment">//       自定义对象类型</span><br><span class="hljs-comment">// 输入先检查类型是否正确, 再执行合法性校验</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>	props: &#123;<br>		name: &#123;<br>            type: <span class="hljs-built_in">String</span>,<br>            <span class="hljs-keyword">default</span>: <span class="hljs-string">&#x27;xxx&#x27;</span>,<br>            validator: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>&#123;...&#125;, <span class="hljs-comment">// 输入合法性校验</span><br>        &#125;<br>	&#125;,<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="意外使用"><a href="#意外使用" class="headerlink" title="意外使用"></a>意外使用</h3><h4 id="传入非prop的属性"><a href="#传入非prop的属性" class="headerlink" title="传入非prop的属性"></a>传入非prop的属性</h4><p>这些属性直接加入到子组件的根元素上</p>
+<h5 id="不希望继承"><a href="#不希望继承" class="headerlink" title="不希望继承"></a>不希望继承</h5><p>配置下面信息子组件的根元素就不会继承父组件传入的未知prop属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js">Vue.component(<span class="hljs-string">&#x27;my-component&#x27;</span>, &#123;<br>    inheritAttrs: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 注：不会影响class/style的合并操作</span><br>    <span class="hljs-comment">// ...</span><br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<p>使用<code>$attrs</code>可以把未知prop属性加入到某元素中(<code>常用于基础组件的封装</code>)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- base-input.vue中定义如下 --&gt;<br>&lt;label&gt;<br>	&#123;&#123; label &#125;&#125;<br>    &lt;input v-bind&#x3D;&quot;$attrs&quot;&#x2F;&gt;<br>&lt;&#x2F;label&gt;<br>&lt;!-- 父组件使用时 --&gt;<br>&lt;base-input v-model&#x3D;&quot;username&quot; required placeholder&#x3D;&quot;Enter&quot;&gt;&lt;&#x2F;base-input&gt;<br></code></pre></td></tr></table></figure>
+
+<p>从上面代码上看，父组件的未知属性直接插入到子组件中的<code>$attrs</code></p>
+<h4 id="替换-合并已有属性"><a href="#替换-合并已有属性" class="headerlink" title="替换/合并已有属性"></a>替换/合并已有属性</h4><p>如父组件传入<code>class/style</code>，子组件会合并里面的内容，并且父组件在后边<code>父组件的css属性会替换子组件的属性</code></p>
+<h2 id="子-gt-父-事件监听"><a href="#子-gt-父-事件监听" class="headerlink" title="子=&gt;父 事件监听"></a>子=&gt;父 事件监听</h2><h3 id="v-on"><a href="#v-on" class="headerlink" title="v-on/@"></a>v-on/@</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- my-button.vue 子组件 --&gt;<br>&lt;button v-on:click&#x3D;&quot;$emit(&#39;enlarge-text&#39;)&quot;&gt; &#x2F;&#x2F; $emit(FuncName, ...agrs)<br>    ClickButton<br>&lt;&#x2F;button&gt;<br>&lt;!-- 父组件 --&gt;<br>&lt;my-button @enlarge-text&#x3D;&quot;console.log(&#39;点击事件&#39;)&quot;&gt;&lt;&#x2F;my-button&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;input v-model&#x3D;&quot;text&quot; &#x2F;&gt;<br>&lt;!-- 等价于 --&gt;<br>&lt;input v-bind:value&#x3D;&quot;text&quot; v-on:input&#x3D;&quot;text &#x3D; $event.target.value&quot; &#x2F;&gt;<br></code></pre></td></tr></table></figure>
+
+<p>子组件实现可让父组件使用v-model</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- props 定义v-model的属性 如value --&gt;<br>&lt;input :value&#x3D;&quot;value&quot; @input&#x3D;&quot;$emit(&#39;input&#39;, $event.target.value)&quot; &#x2F;&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="sync"><a href="#sync" class="headerlink" title=".sync"></a>.sync</h3><blockquote>
+<p> 注：2.3.0新增</p>
+</blockquote>
+<p>是在v-on的基础上添加, 简化父组件书写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;my-input v-bind:title.sync&#x3D;&quot;title&quot;&gt;&lt;&#x2F;my-input&gt; &lt;!-- 注意这里的title只能是字面量,不可以是js表达式 --&gt;<br>&lt;!-- 等价于(自动生成下面函数) --&gt;<br>&lt;my-input :title&#x3D;&quot;title&quot; v-on:update:title&#x3D;&quot;title&quot;&gt;&lt;&#x2F;my-input&gt;<br><br>&lt;!-- 子组件进行调用函数即可更新 --&gt;<br>this.$emit(&#39;update:title&#39;, newTitle);<br></code></pre></td></tr></table></figure>
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li><p>命名</p>
+<p>区分大小写，全部被转换成小写。推荐始终使用kebab-case命名</p>
+</li>
+</ul>
+<h1 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h1><p>可以让父组件传递<code>html</code>渲染到子组件中的槽位</p>
+<blockquote>
+<p>2.6.0 引入 v-slot 取代 slot和slot-scope</p>
+</blockquote>
+<h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- 父组件 --&gt;<br>&lt;navigation&gt;<br>	&lt;!-- 插入的html、文本等 --&gt;<br>    Your HTML<br>&lt;&#x2F;navigation&gt;<br>&lt;!-- 子组件 --&gt;<br>&lt;a&gt;<br>	&lt;slot&gt;xxx&lt;&#x2F;slot&gt;  &lt;!-- 父组件所插入的位置, 当未插入默认使用xxx --&gt;<br>&lt;&#x2F;a&gt;<br></code></pre></td></tr></table></figure>
+
+<h2 id="数据传递"><a href="#数据传递" class="headerlink" title="数据传递"></a>数据传递</h2><blockquote>
+<p><strong>父级模板里面的所有内容都是在父级作用域中编译的</strong></p>
+<p><strong>子模板里的所有内容都是在子作用域中编译的</strong></p>
+</blockquote>
+<p>插槽标签在父级，只能访问到父级的数据</p>
+<h3 id="插槽访问子组件数据"><a href="#插槽访问子组件数据" class="headerlink" title="插槽访问子组件数据"></a>插槽访问子组件数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- my-slot.vue 子组件 --&gt;<br>&lt;slot v-bind:user&#x3D;&quot;user&quot;&gt;&lt;&#x2F;slot&gt;<br>&lt;!-- 父组件 --&gt;<br>&lt;my-slot v-slot:default&#x3D;&quot;props&quot;&gt;&#123;&#123;props.user.xxx&#125;&#125;&lt;&#x2F;my-slot&gt; &lt;!-- default是插槽名，default默认插槽; props是变量名，任意名字都可 --&gt;<br>&lt;!-- default可去掉 --&gt;<br>&lt;my-slot v-slot&#x3D;&quot;props&quot;&gt;&#123;&#123;props.user.xxx&#125;&#125;&lt;&#x2F;my-slot&gt;<br></code></pre></td></tr></table></figure>
+
+<h2 id="具有名字的插槽"><a href="#具有名字的插槽" class="headerlink" title="具有名字的插槽"></a>具有名字的插槽</h2><blockquote>
+<p>2.6.0 引入</p>
+</blockquote>
+<p>当一个子组件有多个槽位，父组件插入的位置需要用<code>v-slot</code>指定插槽名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- base-layout.vue子组件 --&gt;<br>&lt;div&gt;<br>    &lt;slot name&#x3D;&quot;header&quot;&gt;&lt;&#x2F;slot&gt;<br>    &lt;slot&gt;&lt;&#x2F;slot&gt;  &lt;!-- 这个槽位接收剩余信息 --&gt;<br>    &lt;slot name&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;slot&gt;<br>&lt;&#x2F;div&gt;<br>&lt;!-- 父组件 --&gt;<br>&lt;base-layout&gt;<br>	&lt;template v-slot:header&gt;<br>    	&lt;h1&gt;<br>            插入到头部槽位<br>        &lt;&#x2F;h1&gt;<br>    &lt;&#x2F;template&gt;<br>    &lt;!-- 缩写 --&gt;<br>    &lt;tempalte #header&gt;&lt;&#x2F;tempalte&gt;<br>    &lt;!-- 动态插槽名 --&gt;<br>    &lt;template v-slot:[slotName]&gt;&lt;&#x2F;template&gt;<br>    <br>    &lt;template v-slot:footer&gt;<br>    	插入到尾部槽位<br>    &lt;&#x2F;template&gt;<br>&lt;&#x2F;base-layout&gt;<br></code></pre></td></tr></table></figure>
+
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>将父组件的插槽内容包裹在一个单参数的函数里</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">props</span>) </span>&#123;<br>    <span class="hljs-comment">// 插槽内容...</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h1 id="动态组件-amp-异步组件"><a href="#动态组件-amp-异步组件" class="headerlink" title="动态组件&amp;异步组件"></a>动态组件&amp;异步组件</h1><h2 id="动态组件"><a href="#动态组件" class="headerlink" title="动态组件"></a>动态组件</h2><p>使用内置组件实现动态组件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- 可以是一个组件的名字、也可以是一个组件的选项对象 --&gt;<br>&lt;component :is&#x3D;&quot;name&quot;&gt;&lt;&#x2F;component&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="组件缓存"><a href="#组件缓存" class="headerlink" title="组件缓存"></a>组件缓存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;keep-alive&gt;<br>	&lt;component v-bind:is&#x3D;&quot;name&quot;&gt;&lt;&#x2F;component&gt;<br>&lt;&#x2F;keep-alive&gt;<br></code></pre></td></tr></table></figure>
+
+<h2 id="异步组件"><a href="#异步组件" class="headerlink" title="异步组件"></a>异步组件</h2><p>利用工厂函数来定义组件<code>单例懒汉式加载</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js">Vue.component(<span class="hljs-string">&#x27;async-component&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>&#123;<br>    <span class="hljs-comment">// setTimeout只是一个演示</span><br>    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>        resolve(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;xxx.vue&#x27;</span>))<br>    &#125;, <span class="hljs-number">1000</span>)<br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><p>异步组件和<code>webpack的code-splitting</code>功能配合使用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// webpack</span><br>Vue.component(<span class="hljs-string">&#x27;async-component&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve</span>)</span>&#123;<br>    <span class="hljs-comment">// require函数</span><br>    <span class="hljs-comment">//		第一个传入数组，会异步加载数组里面的组件</span><br>    <span class="hljs-comment">//		全部加载完成后回调resolve</span><br>    <span class="hljs-built_in">require</span>([<span class="hljs-string">&#x27;xxx.vue&#x27;</span>], resolve)<br>&#125;)<br><br><span class="hljs-comment">// webpack和ES2015</span><br>Vue.component(<span class="hljs-string">&#x27;async-component&#x27;</span>, <span class="hljs-function">()=&gt;</span><span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;xxx.vue&#x27;</span>))<br></code></pre></td></tr></table></figure>
+
+<h3 id="处理加载状态"><a href="#处理加载状态" class="headerlink" title="处理加载状态"></a>处理加载状态</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs js">Vue.component(<span class="hljs-string">&#x27;async-component&#x27;</span>, <span class="hljs-function">()=&gt;</span>(&#123;<br>    <span class="hljs-comment">// 需要加载的组件-Promise对象</span><br>    component: <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;xxx.vue&#x27;</span>),<br>    <span class="hljs-comment">// 异步组件加载时使用的组件</span><br>    loading: LoadingComponent,<br>    <span class="hljs-comment">// 加载失败时使用的组件</span><br>    error: ErrorComponent,<br>    <span class="hljs-comment">// 展示加载时组件的延时时间，默认200ms(200ms后进行加载组件)</span><br>    delay: <span class="hljs-number">200</span>,<br>    <span class="hljs-comment">// 加载超时，会时候error组件，默认Infinity</span><br>    t<br>&#125;))<br></code></pre></td></tr></table></figure>
+
+
+
+    </div>
+  </div>
+  <div class="go-up">
+  <a href="#" rel="go-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+</div>
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+<script src="/js/resizeable.min.js"></script>
+<script src="/js/joinable.js"></script>
+<script src="/js/xenon-api.min.js"></script>
+<script src="/js/xenon-toggles.min.js"></script>
+<script src="/js/xenon-custom.min.js"></script>
+
+
+
+
+<script src="/js/lozad.min.js"></script>
+
+
+</body>
+
+<script src="/js/footer.js"></script>
+
+</html>
