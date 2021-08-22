@@ -1,8 +1,8 @@
 - name: HTTP
   url: /http
-  img: /images/logos/myblog.png
+  img: /daohang/images/logos/myblog.png
   description: http页面
 - name: 百度搜索
   url: https://baidu.com
-  img: /images/logos/myblog.png
+  img: /daohang/images/logos/myblog.png
   description: 搜索引擎
