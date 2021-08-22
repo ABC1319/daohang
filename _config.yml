@@ -13,7 +13,7 @@ timezone: UTC
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://hbuacm.github.io/
+url: https://hbuacm.github.io/daohang
 root: /daohang/
 permalink: :title/
 permalink_defaults: 
@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: 
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -92,7 +92,7 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
+include: 
 exclude:
 ignore:
 
